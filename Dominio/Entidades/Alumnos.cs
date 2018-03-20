@@ -22,6 +22,29 @@ namespace Dominio.Entidades
         public string TipoSangre { get; set; }
         public string Telefono { get; set; }
         public string Nacionalidad { get; set; }
-        public int MyProperty { get; set; }
+
+
+        public Boolean esEntidadValida(out string mensaje) {
+            mensaje = "OK";
+
+            if (string.IsNullOrEmpty(PrimerNombre))
+            {
+                mensaje = "Favor Ingrese Primer Nombre";
+                return false;
+            }
+            if (string.IsNullOrEmpty(SegundoNombre))
+            {
+                mensaje = "Favor Ingrese Segundo Nombre";
+                return false;
+            }
+            if (string.IsNullOrEmpty(PrimerApellido))
+            {
+                mensaje = "Favor Ingrese Primer Apellido";
+                return false;
+            }
+            return true;
+        }
     }
+    
+    
 }
