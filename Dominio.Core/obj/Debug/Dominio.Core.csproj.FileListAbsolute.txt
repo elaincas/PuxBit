@@ -1,0 +1,5 @@
+C:\Users\Lainfiesta\Documents\PuxBit\1\PuxBit\Dominio.Core\bin\Debug\Dominio.Core.dll
+C:\Users\Lainfiesta\Documents\PuxBit\1\PuxBit\Dominio.Core\bin\Debug\Dominio.Core.pdb
+C:\Users\Lainfiesta\Documents\PuxBit\1\PuxBit\Dominio.Core\obj\Debug\Dominio.Core.csprojResolveAssemblyReference.cache
+C:\Users\Lainfiesta\Documents\PuxBit\1\PuxBit\Dominio.Core\obj\Debug\Dominio.Core.dll
+C:\Users\Lainfiesta\Documents\PuxBit\1\PuxBit\Dominio.Core\obj\Debug\Dominio.Core.pdb
