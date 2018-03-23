@@ -22,6 +22,17 @@ namespace Dominio.Entidades
         public string TipoSangre { get; set; }
         public string Telefono { get; set; }
         public string Nacionalidad { get; set; }
+        public string Correo { get; set; }
+        public string  TelefonoEmergencia { get; set; }
+        public string Descripcion { get; set; }
+        public string ObsAlergia { get; set; }
+        public Boolean Trabaja { get; set; }
+        public string NombreTrabajo { get; set; }
+        public string NombreTrabjo { get; set; }
+        public string LugarTrabajo { get; set; }
+        public string EstadoCivil { get; set; }
+        public string PadeceEnfermedad { get; set; }
+    
 
 
         public Boolean esEntidadValida(out string mensaje) {

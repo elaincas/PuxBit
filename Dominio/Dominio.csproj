@@ -42,6 +42,10 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Entidades\Alumnos.cs" />
+    <Compile Include="Entidades\Clases.cs" />
+    <Compile Include="Entidades\Grados.cs" />
+    <Compile Include="Entidades\Padres.cs" />
+    <Compile Include="Entidades\Profesores.cs" />
     <Compile Include="EnumTipoRespuesta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
