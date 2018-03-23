@@ -25,5 +25,6 @@ namespace Dominio.Entidades
         public string NivelEstudio { get; set; }
         public string CampoEstudio { get; set; }
 
+        public virtual Calificaiones Calificacion { get; set; }
     }
 }

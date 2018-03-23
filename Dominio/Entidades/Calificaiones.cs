@@ -25,6 +25,8 @@ namespace Dominio.Entidades
         public int BaseCalificacion { get; set; }
         public string Observacion { get; set; }
 
-
+        public virtual List<Clases>  Clases{ get; set; }
+        public virtual List<Profesores>  Profesores { get; set; }
+        public virtual List<Alumnos> Alumnos { get; set; }
     }
 }

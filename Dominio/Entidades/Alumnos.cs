@@ -32,8 +32,9 @@ namespace Dominio.Entidades
         public string LugarTrabajo { get; set; }
         public string EstadoCivil { get; set; }
         public string PadeceEnfermedad { get; set; }
-    
 
+        public virtual AsistenciaAlumnos AsistenciaAlumno { get; set; }
+        public virtual Calificaiones Calificacion { get; set; }
 
         public Boolean esEntidadValida(out string mensaje) {
             mensaje = "OK";
