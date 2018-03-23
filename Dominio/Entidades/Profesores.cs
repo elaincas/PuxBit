@@ -9,6 +9,7 @@ namespace Dominio.Entidades
 {
     public class Profesores: EntidadBase
     {
+        public int Fk_IdClase { get; set; }
         public string PrimerNombre { get; set; }
         public string PrimerApellido { get; set; }
         public string SegundoApellido { get; set; }
@@ -26,5 +27,7 @@ namespace Dominio.Entidades
         public string CampoEstudio { get; set; }
 
         public virtual Calificaiones Calificacion { get; set; }
+        public virtual Profesores Profesor { get; set; }
+        public virtual List<Clases>Clases { get; set; }
     }
 }

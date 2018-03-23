@@ -13,7 +13,7 @@ namespace Dominio.Core.Entidades
         public DateTime FechaCrea { get; set; }
         public DateTime FechaModifica { get; set; }
         public Boolean EsActivo { get; set; }
-
+        public int ID { get; set; }
         public EntidadBase()
         {
             FechaCrea = DateTime.Now;

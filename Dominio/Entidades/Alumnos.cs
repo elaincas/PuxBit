@@ -35,6 +35,9 @@ namespace Dominio.Entidades
 
         public virtual AsistenciaAlumnos AsistenciaAlumno { get; set; }
         public virtual Calificaiones Calificacion { get; set; }
+        public virtual Expulsiones Expulsion { get; set; }
+        public virtual Padres Padre { get; set; }
+
 
         public Boolean esEntidadValida(out string mensaje) {
             mensaje = "OK";

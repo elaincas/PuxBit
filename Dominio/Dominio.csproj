@@ -40,13 +40,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Entidades\Alumnos.cs" />
+    <Compile Include="Entidades\AsistenciaAlumnos.cs" />
+    <Compile Include="Entidades\Aulas.cs" />
+    <Compile Include="Entidades\Calificaiones.cs" />
+    <Compile Include="Entidades\ClaseDescripcion.cs" />
     <Compile Include="Entidades\Clases.cs" />
+    <Compile Include="Entidades\Descuentos.cs" />
+    <Compile Include="Entidades\Expulsiones.cs" />
     <Compile Include="Entidades\Grados.cs" />
+    <Compile Include="Entidades\Institucion.cs" />
+    <Compile Include="Entidades\Jornadas.cs" />
+    <Compile Include="Entidades\LogErrores.cs" />
+    <Compile Include="Entidades\Mensajes.cs" />
     <Compile Include="Entidades\Padres.cs" />
+    <Compile Include="Entidades\Pantalla.cs" />
+    <Compile Include="Entidades\Perfiles.cs" />
+    <Compile Include="Entidades\PerfilesPermisos.cs" />
+    <Compile Include="Entidades\Permisos.cs" />
     <Compile Include="Entidades\Profesores.cs" />
-    <Compile Include="EnumTipoRespuesta.cs" />
+    <Compile Include="Entidades\Secciones.cs" />
+    <Compile Include="Entidades\TipoClase.cs" />
+    <Compile Include="Entidades\TipoEnvioMensajes.cs" />
+    <Compile Include="Entidades\Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

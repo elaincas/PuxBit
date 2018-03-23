@@ -11,5 +11,7 @@ namespace Dominio.Entidades
     {
         public string NombreClase { get; set; }
         public virtual Calificaiones Calificacion { get; set; }
+        public virtual Clases Clase { get; set; }
+        public virtual Profesores Profesor { get; set; }
     }
 }

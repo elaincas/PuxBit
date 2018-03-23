@@ -16,5 +16,7 @@ namespace Dominio.Entidades
         public string SegundoNombre { get; set; }
         public int Fk_IdPerfil { get; set; }
 
+        public virtual List<Perfiles> Perfiles { get; set; }
+
     }
 }

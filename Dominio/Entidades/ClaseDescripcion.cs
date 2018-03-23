@@ -17,5 +17,8 @@ namespace Dominio.Entidades
         public int Fk_IdJornada { get; set; }
         public int Fk_IdSeccion { get; set; }
         public int Fk_IdAula { get; set; }
+
+        public virtual List<Clases> Clases { get; set; }
+        public virtual List<Profesores> Profesores { get; set; }
     }
 }

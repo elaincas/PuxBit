@@ -13,6 +13,8 @@ namespace Dominio.Entidades
         public string Motivo { get; set; }
         public DateTime FechaInicioSancion { get; set; }
         public DateTime FechaFinalSancion { get; set; }
+
+        public virtual List<Alumnos> Alumnos { get; set; }
     }
     
 }
