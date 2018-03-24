@@ -51,7 +51,6 @@
     <Compile Include="Mapeos\AulasMapeos.cs" />
     <Compile Include="Mapeos\ClasesDescripcionMapeos.cs" />
     <Compile Include="Mapeos\ClasesMapeo.cs" />
-    <Compile Include="Mapeos\ClasesMapeos.cs" />
     <Compile Include="Mapeos\DescuentosMapeo.cs" />
     <Compile Include="Mapeos\EnventosMapeos.cs" />
     <Compile Include="Mapeos\GradosMapeos.cs" />

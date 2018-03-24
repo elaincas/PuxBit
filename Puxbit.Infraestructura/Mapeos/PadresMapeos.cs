@@ -37,6 +37,8 @@ namespace Puxbit.Infraestructura.Mapeos
             Property(x => x.DireccionHogar).HasColumnName("DireccionHogar").HasColumnType("string").IsOptional();
             Property(x => x.User).HasColumnName("User").HasColumnType("string").IsOptional();
             Property(x => x.Password).HasColumnName("Password").HasColumnType("string").IsOptional();
+
+            HasRequired(x => x.Alumno).WithMany(x => x.Padres).HasForeignKey(x => x.Fk_IdAlumno);
         }
     }
 }

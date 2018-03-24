@@ -20,6 +20,7 @@ namespace Puxbit.Infraestructura.Mapeos
             Property(x => x.Correo).HasColumnName("Correo").HasColumnType("string").IsRequired();
             Property(x => x.Telefono).HasColumnName("Telefono").HasColumnType("string").IsRequired();
             Property(x => x.Encargado).HasColumnName("Encargado").HasColumnType("string").IsRequired();
+
         }
         
     }

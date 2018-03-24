@@ -15,8 +15,6 @@ namespace Dominio.Entidades
         public string Correo { get; set; }
         public string Telefono { get; set; }
         public string Encargado { get; set; }
-        public virtual Mensajes Mensaje { get; set; }
-        public virtual LogErrores  LogEror { get; set; }
 
         public virtual List<LogErrores> LogErrores { get; set; }
         public virtual List<Mensajes> Mensajes { get; set; }

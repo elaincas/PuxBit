@@ -17,7 +17,10 @@ namespace Puxbit.Infraestructura.Mapeos
             Property(x => x.Titulo).HasColumnName("Titulo").HasColumnType("string").IsRequired();
             Property(x => x.Contenido).HasColumnName("Contenido").HasColumnType("string").IsRequired();
             Property(x => x.FechaCrea).HasColumnName("FechaCrea").HasColumnType("datetime").IsRequired();
-           
+
+            HasRequired(x => x.Institucion).WithMany(x => x.Mensajes).HasForeignKey(x => x.Fk_IdInstitucion);
+            HasRequired(x => x.TipoEnvioMensaje).WithMany(x => x.Mensajes).HasForeignKey(x => x.IdTipoEnvioMensaje);
+
         }
     }
 }
