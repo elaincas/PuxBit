@@ -47,6 +47,7 @@
     <Compile Include="Entidades\ClaseDescripcion.cs" />
     <Compile Include="Entidades\Clases.cs" />
     <Compile Include="Entidades\Descuentos.cs" />
+    <Compile Include="Entidades\Eventos.cs" />
     <Compile Include="Entidades\Expulsiones.cs" />
     <Compile Include="Entidades\Grados.cs" />
     <Compile Include="Entidades\Institucion.cs" />

@@ -48,9 +48,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mapeos\AlumnosMapeos.cs" />
+    <Compile Include="Mapeos\AulasMapeos.cs" />
+    <Compile Include="Mapeos\ClasesDescripcionMapeos.cs" />
     <Compile Include="Mapeos\ClasesMapeo.cs" />
+    <Compile Include="Mapeos\ClasesMapeos.cs" />
+    <Compile Include="Mapeos\DescuentosMapeo.cs" />
+    <Compile Include="Mapeos\EnventosMapeos.cs" />
+    <Compile Include="Mapeos\GradosMapeos.cs" />
+    <Compile Include="Mapeos\InstitucionesMapeos.cs" />
+    <Compile Include="Mapeos\JornadasMapeos.cs" />
+    <Compile Include="Mapeos\LogErroresMapeos.cs" />
+    <Compile Include="Mapeos\MensajesMapeos.cs" />
     <Compile Include="Mapeos\PadresMapeos.cs" />
     <Compile Include="Mapeos\ProfesoresMapeos.cs" />
+    <Compile Include="Mapeos\SeccionesMapeos.cs" />
+    <Compile Include="Mapeos\TipoClasesMapeos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
