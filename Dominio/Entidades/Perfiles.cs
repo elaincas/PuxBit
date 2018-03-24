@@ -11,8 +11,9 @@ namespace Dominio.Entidades
     {
         public string NombrePerfil { get; set; }
         public string Descripcion { get; set; }
-        public virtual Usuarios Usuario { get; set; }
-        public virtual PerfilesPermisos PerfilPermiso { get; set; }
+
+        public virtual List<PerfilesPermisos> PerfilesPermisos { get; set; }
+        public virtual List<Usuarios> Usuarios { get; set; }
 
     }
 }

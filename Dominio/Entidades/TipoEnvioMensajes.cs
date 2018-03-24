@@ -10,5 +10,7 @@ namespace Dominio.Entidades
     public class TipoEnvioMensajes: EntidadBase
     {
         public string Descripcion { get; set; }
+
+        public virtual List<Mensajes> Mensajes { get; set; }
     }
 }

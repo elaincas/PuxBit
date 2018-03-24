@@ -33,6 +33,7 @@ namespace Dominio.Entidades
         public string DireccionHogar { get; set; }
         public string User { get; set; }
         public string Password { get; set; }
-        public virtual List<Alumnos>Alumnos { get; set; }
+
+        public virtual Alumnos Alumno { get; set; }
     }
 }

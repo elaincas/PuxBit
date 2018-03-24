@@ -10,8 +10,10 @@ namespace Dominio.Entidades
     public class Clases: EntidadBase
     {
         public string NombreClase { get; set; }
-        public virtual Calificaiones Calificacion { get; set; }
-        public virtual Clases Clase { get; set; }
-        public virtual Profesores Profesor { get; set; }
+
+        public virtual List<Calificaiones> Calificaciones{ get; set; }
+        public virtual List<ClaseDescripcion> ClasesDescripciones{ get; set; }
+
+        public virtual List<Profesores> Profesores { get; set; }
     }
 }

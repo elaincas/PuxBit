@@ -14,6 +14,8 @@ namespace Dominio.Entidades
         public int Fk_IdPantalla { get; set; }
         public Boolean Estado { get; set; }
 
-        public virtual  List<Perfiles>Perfiles { get; set; }
+        public virtual  Perfiles Perfil { get; set; }
+        public virtual  Permisos Permiso { get; set; }
+        public virtual  Pantalla Pantalla { get; set; }
     }
 }

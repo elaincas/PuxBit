@@ -14,7 +14,9 @@ namespace Dominio.Entidades
         public string Contenido { get; set; }
         public int   IdTipoEnvioMensaje { get; set; }
         public DateTime FechaMensaje { get; set; }
-        public virtual List<Institucion> Instituciones { get; set; }
+
+        public virtual Institucion Institucion { get; set; }
+        public virtual TipoEnvioMensajes  TipoEnvioMensaje { get; set; }
 
     }
 }

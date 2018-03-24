@@ -18,7 +18,13 @@ namespace Dominio.Entidades
         public int Fk_IdSeccion { get; set; }
         public int Fk_IdAula { get; set; }
 
-        public virtual List<Clases> Clases { get; set; }
-        public virtual List<Profesores> Profesores { get; set; }
+        public virtual Clases Clase { get; set; }
+        public virtual Profesores Profesor { get; set; }
+        public virtual TipoClase TipoClase { get; set; }
+        public virtual Jornadas Jornada { get; set; }
+        public virtual Secciones Seccion { get; set; }
+        public virtual Aulas Aula { get; set; }
+
+
     }
 }

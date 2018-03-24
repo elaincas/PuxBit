@@ -21,7 +21,7 @@ namespace Dominio.Entidades
         public Boolean Sabado { get; set; }
         public Boolean Domingo { get; set; }
 
-        public virtual List<Alumnos> Alumnos { get; set; }
-        public virtual List<Profesores> Profesores { get; set; }
+        public virtual Alumnos Alumno { get; set; }
+        public virtual Profesores Profesor { get; set; }
     }
 }

@@ -14,6 +14,7 @@ namespace Dominio.Entidades
         public string VesionSistema { get; set; }
         public string Evento { get; set; }
         public int Fk_Institucion { get; set; }
-        public virtual List<Institucion> Instituciones { get; set; }
+
+        public virtual Institucion Institucion { get; set; }
     }
 }

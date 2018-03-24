@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Puxbit.Infraestructura.Mapeos
 {
-    public class AlumnosMapeos: EntidadBaseMapeo<Alumnos>
+    public class AlumnosMapeos : EntidadBaseMapeo<Alumnos>
     {
-        public AlumnosMapeos():base("Alumnos")
+        public AlumnosMapeos() : base("Alumnos")
         {
             HasKey(x => x.ID);
             Property(x => x.ID).HasColumnName("ID").HasColumnType("int").IsRequired();
@@ -36,8 +36,7 @@ namespace Puxbit.Infraestructura.Mapeos
             Property(x => x.EstadoCivil).HasColumnName("EstadoCivil").HasColumnType("string").IsOptional();
             Property(x => x.PadeceEnfermedad).HasColumnName("PadeceEnfemedad").HasColumnType("boolean").IsOptional();
 
-
-        }  
+        }
     }
      
 }

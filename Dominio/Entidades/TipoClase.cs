@@ -10,5 +10,7 @@ namespace Dominio.Entidades
     public class TipoClase: EntidadBase
     {
         public string Descripcion { get; set; }
+        public virtual List<ClaseDescripcion> ClasesDescripciones { get; set; }
+
     }
 }

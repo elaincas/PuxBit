@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PuxBit.Infraestructura.Core
 {
-    public class EntidadBaseMapeo<TEntidad>: EntityTypeConfiguration<TEntidad> where TEntidad : EntidadBase
+    public class EntidadBaseMapeo<TEntidad> : EntityTypeConfiguration<TEntidad> where TEntidad : EntidadBase
     {
         public EntidadBaseMapeo(string tablaNombre)
         {

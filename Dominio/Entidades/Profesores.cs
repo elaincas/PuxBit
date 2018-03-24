@@ -26,8 +26,11 @@ namespace Dominio.Entidades
         public string NivelEstudio { get; set; }
         public string CampoEstudio { get; set; }
 
-        public virtual Calificaiones Calificacion { get; set; }
-        public virtual Profesores Profesor { get; set; }
-        public virtual List<Clases>Clases { get; set; }
+        public virtual Clases Clase { get; set; }
+
+        public virtual List<AsistenciaAlumnos> AsistenciasAlumnos{ get; set; }
+        public virtual List<Calificaiones> Calificaciones { get; set; }
+        public virtual List<ClaseDescripcion> ClasesDescripciones { get; set; }
+
     }
 }

@@ -1,0 +1,12 @@
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\obj\Debug\PuxBit.Infraestructura.Core.csprojResolveAssemblyReference.cache
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\bin\Debug\PuxBit.Infraestructura.Core.dll.config
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\bin\Debug\PuxBit.Infraestructura.Core.dll
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\bin\Debug\PuxBit.Infraestructura.Core.pdb
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\bin\Debug\Dominio.Core.dll
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\bin\Debug\EntityFramework.dll
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\bin\Debug\Dominio.Core.pdb
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\bin\Debug\EntityFramework.xml
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\obj\Debug\PuxBit.Infraestructura.Core.dll
+C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\PuxBit.Infraestructura.Core\obj\Debug\PuxBit.Infraestructura.Core.pdb

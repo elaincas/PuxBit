@@ -12,5 +12,7 @@ namespace Dominio.Entidades
         public string Nombre  { get; set; }
         public string Descripcion { get; set; }
         public Boolean Estado { get; set; }
+        public virtual List<PerfilesPermisos> PerfilesPermisos { get; set; }
+
     }
 }

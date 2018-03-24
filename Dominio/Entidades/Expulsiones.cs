@@ -14,7 +14,7 @@ namespace Dominio.Entidades
         public DateTime FechaInicioSancion { get; set; }
         public DateTime FechaFinalSancion { get; set; }
 
-        public virtual List<Alumnos> Alumnos { get; set; }
+        public virtual Alumnos Alumno { get; set; }
     }
     
 }

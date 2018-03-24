@@ -33,10 +33,10 @@ namespace Dominio.Entidades
         public string EstadoCivil { get; set; }
         public string PadeceEnfermedad { get; set; }
 
-        public virtual AsistenciaAlumnos AsistenciaAlumno { get; set; }
-        public virtual Calificaiones Calificacion { get; set; }
-        public virtual Expulsiones Expulsion { get; set; }
-        public virtual Padres Padre { get; set; }
+        public virtual List<AsistenciaAlumnos> AsistenciasAlumnos { get; set; }
+        public virtual List<Calificaiones> Calificaciones { get; set; }
+        public virtual List<Expulsiones> Expulsiones{ get; set; }
+        public virtual List<Padres> Padres { get; set; }
 
 
         public Boolean esEntidadValida(out string mensaje) {
