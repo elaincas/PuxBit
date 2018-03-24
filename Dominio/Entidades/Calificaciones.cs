@@ -26,8 +26,8 @@ namespace Dominio.Entidades
         public string Observacion { get; set; }
         public string EstadoClase { get; set; }
 
-        public virtual Clases  Clases{ get; set; }
-        public virtual Profesores  Profesores { get; set; }
-        public virtual Alumnos Alumnos { get; set; }
+        public virtual Clases  Clase{ get; set; }
+        public virtual Profesores  Profesor { get; set; }
+        public virtual Alumnos Alumno { get; set; }
     }
 }

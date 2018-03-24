@@ -29,6 +29,8 @@ namespace Puxbit.Infraestructura.Mapeos
             Property(x => x.EstadoCivil).HasColumnName("EstadoCivil").HasColumnType("string").IsOptional();
             Property(x => x.NivelEstudio).HasColumnName("NivelEstudio").HasColumnType("string").IsOptional();
             Property(x => x.CampoEstudio).HasColumnName("CampoEstudio").HasColumnType("string").IsOptional();
+
+            HasRequired(x => x.Clase).WithMany(x => x.Profesores).HasForeignKey(x => x.Fk_IdClase);
         }
     }
 }

@@ -27,6 +27,9 @@ namespace Puxbit.Infraestructura.Mapeos
             Property(x => x.BaseCalificacion).HasColumnName("baseCalificacion").HasColumnType("int").IsRequired();
             Property(x => x.Observacion).HasColumnName("Observacion").HasColumnType("string").IsOptional();
 
+            HasRequired(x => x.Clase).WithMany(x => x.Calificaciones).HasForeignKey(x => x.Fk_IdClase);
+            HasRequired(x => x.Profesor).WithMany(x => x.Calificaciones).HasForeignKey(x => x.Fk_IdProfesor);
+            HasRequired(x => x.Alumno).WithMany(x => x.Calificaciones).HasForeignKey(x => x.Fk_IdAlumno);
         }
     }
 }

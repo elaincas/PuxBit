@@ -19,8 +19,8 @@ namespace Puxbit.Infraestructura.Mapeos
             Property(x => x.PistaPassword).HasColumnName("PistaPassword").HasColumnType("string").IsRequired();
             Property(x => x.PrimerNombre).HasColumnName("PrimerNombre").HasColumnType("string").IsRequired();
             Property(x => x.SegundoNombre).HasColumnName("SegundoNombre").HasColumnType("string").IsRequired();
-           
 
+            HasRequired(x => x.Perfil).WithMany(x => x.Usuarios).HasForeignKey(x => x.Fk_IdPerfil);
 
 
         }

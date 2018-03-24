@@ -17,6 +17,9 @@ namespace Puxbit.Infraestructura.Mapeos
             Property(x => x.Motivo).HasColumnName("Motivo").HasColumnType("string").IsRequired();
             Property(x => x.FechaInicioSancion).HasColumnName("FechaInicioSancion").HasColumnType("datetime").IsRequired();
             Property(x => x.FechaFinalSancion).HasColumnName("FechaFinalSancion").HasColumnType("datetime").IsRequired();
+
+            HasRequired(x => x.Alumno).WithMany(x => x.Expulsiones).HasForeignKey(x => x.Fk_IdAlumno);
+
         }
     }
 }

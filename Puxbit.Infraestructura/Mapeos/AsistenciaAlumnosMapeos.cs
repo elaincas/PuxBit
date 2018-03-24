@@ -23,6 +23,8 @@ namespace Puxbit.Infraestructura.Mapeos
             Property(x => x.Sabado).HasColumnName("Sabado").HasColumnType("bit").IsOptional();
             Property(x => x.Domingo).HasColumnName("Domingo").HasColumnType("bit").IsOptional();
 
+            HasRequired(x => x.Alumno).WithMany(x => x.AsistenciasAlumnos).HasForeignKey(x => x.Fk_IdAlumno);
+            HasRequired(x => x.Profesor).WithMany(x => x.AsistenciasAlumnos).HasForeignKey(x => x.Fk_IdProfesor);
 
         }
     }

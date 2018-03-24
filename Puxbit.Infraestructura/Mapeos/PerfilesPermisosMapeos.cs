@@ -14,7 +14,11 @@ namespace Puxbit.Infraestructura.Mapeos
         {
             HasKey(x => x.ID);
             Property(x => x.ID).HasColumnName("ID").HasColumnType("int").IsRequired();
-             
+
+            HasRequired(x => x.Perfil).WithMany(x=>x.PerfilesPermisos).HasForeignKey(x => x.Fk_IdPerfil);
+            HasRequired(x => x.Permiso).WithMany(x=>x.PerfilesPermisos).HasForeignKey(x => x.Fk_IdPermisos);
+            HasRequired(x => x.Pantalla).WithMany(x => x.PerfilesPermisos).HasForeignKey(x => x.Fk_IdPantalla);
+
         }
     }
 }
