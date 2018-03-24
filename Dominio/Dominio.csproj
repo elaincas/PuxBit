@@ -43,7 +43,7 @@
     <Compile Include="Entidades\Alumnos.cs" />
     <Compile Include="Entidades\AsistenciaAlumnos.cs" />
     <Compile Include="Entidades\Aulas.cs" />
-    <Compile Include="Entidades\Calificaiones.cs" />
+    <Compile Include="Entidades\Calificaciones.cs" />
     <Compile Include="Entidades\ClaseDescripcion.cs" />
     <Compile Include="Entidades\Clases.cs" />
     <Compile Include="Entidades\Descuentos.cs" />

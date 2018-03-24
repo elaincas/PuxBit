@@ -34,7 +34,7 @@ namespace Dominio.Entidades
         public string PadeceEnfermedad { get; set; }
 
         public virtual List<AsistenciaAlumnos> AsistenciasAlumnos { get; set; }
-        public virtual List<Calificaiones> Calificaciones { get; set; }
+        public virtual List<Calificaciones> Calificaciones { get; set; }
         public virtual List<Expulsiones> Expulsiones{ get; set; }
         public virtual List<Padres> Padres { get; set; }
 

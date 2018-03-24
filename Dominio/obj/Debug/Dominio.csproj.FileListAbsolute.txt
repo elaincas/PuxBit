@@ -12,3 +12,10 @@ C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\Dominio\bin\Debug\Dominio.
 C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
 C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\Dominio\obj\Debug\Dominio.dll
 C:\Users\Lainfiesta\Documents\PuxBit\PuxBitVersionado\Dominio\obj\Debug\Dominio.pdb
+C:\Users\migue\Documents\PuxBit\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\migue\Documents\PuxBit\Dominio\bin\Debug\Dominio.dll
+C:\Users\migue\Documents\PuxBit\Dominio\bin\Debug\Dominio.pdb
+C:\Users\migue\Documents\PuxBit\Dominio\bin\Debug\Dominio.Core.dll
+C:\Users\migue\Documents\PuxBit\Dominio\bin\Debug\Dominio.Core.pdb
+C:\Users\migue\Documents\PuxBit\Dominio\obj\Debug\Dominio.dll
+C:\Users\migue\Documents\PuxBit\Dominio\obj\Debug\Dominio.pdb

@@ -11,6 +11,7 @@ namespace Dominio.Entidades
     {
         public int Fk_IdClase { get; set; }
         public string PrimerNombre { get; set; }
+        public string SegundoNombre { get; set; }
         public string PrimerApellido { get; set; }
         public string SegundoApellido { get; set; }
         public int Identidad { get; set; }
@@ -29,7 +30,7 @@ namespace Dominio.Entidades
         public virtual Clases Clase { get; set; }
 
         public virtual List<AsistenciaAlumnos> AsistenciasAlumnos{ get; set; }
-        public virtual List<Calificaiones> Calificaciones { get; set; }
+        public virtual List<Calificaciones> Calificaciones { get; set; }
         public virtual List<ClaseDescripcion> ClasesDescripciones { get; set; }
 
     }
