@@ -24,7 +24,22 @@ namespace Dominio.Entidades
         public virtual Jornadas Jornada { get; set; }
         public virtual Secciones Seccion { get; set; }
         public virtual Aulas Aula { get; set; }
+        public Boolean esEntidadValida(out string mensaje)
+        {
+            mensaje = "OK";
 
+            if (string.IsNullOrEmpty(Dia))
+            {
+                mensaje = "Favor Ingrese el Dia de la  Clase";
+                return false;
+            }
+            if (HoraClase == null)
+            {
+                mensaje = "Favor Ingrese la hora de la clase";
+                return false;
+            }
+            return true;
+        }
 
     }
 }

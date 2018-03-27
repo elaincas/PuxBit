@@ -16,7 +16,7 @@ namespace Puxbit.Infraestructura.Mapeos
             Property(x => x.ID).HasColumnName("ID").HasColumnType("int").IsRequired();
             Property(x => x.Descripcion).HasColumnName("Descripcion").HasColumnType("string").IsRequired();
             Property(x => x.NombrePantalla).HasColumnName("NombrePantalla").HasColumnType("string").IsRequired();
-            Property(x => x.VesionSistema).HasColumnName("VersionSistema").HasColumnType("string").IsRequired();
+            Property(x => x.VersionSistema).HasColumnName("VersionSistema").HasColumnType("string").IsRequired();
             Property(x => x.Evento).HasColumnName("Evento").HasColumnType("string").IsRequired();
 
             HasRequired(x => x.Institucion).WithMany(x => x.LogErrores).HasForeignKey(x => x.Fk_Institucion);

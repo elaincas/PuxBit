@@ -29,5 +29,47 @@ namespace Dominio.Entidades
         public virtual Clases  Clase{ get; set; }
         public virtual Profesores  Profesor { get; set; }
         public virtual Alumnos Alumno { get; set; }
+        public Boolean esEntidadValida(out string mensaje)
+        {
+            mensaje = "OK";
+
+            if (PromedioClase == 0)
+            {
+                mensaje = "Favor Ingrese el Promedio de Clase";
+                return false;
+            }
+            if (Nota_ip==0)
+            {
+                mensaje = "Favor Ingrese Nota del Primer Parcial";
+                return false;
+            }
+            if (Nota_iip == 0)
+            {
+                mensaje = "Favor Ingrese Nota del Segundo Parcial";
+                return false;
+            }
+            if (Nota_iip == 0)
+            {
+                mensaje = "Favor Ingrese Nota del Tercer Parcial";
+                return false;
+            }
+            if (Nota_ivp == 0)
+            {
+                mensaje = "Favor Ingrese Nota del Cuarto Parcial";
+                return false;
+            }
+            if (string.IsNullOrEmpty (EstadoClase))
+            {
+                mensaje = "Favor Ingrese estado de la Clase";
+                return false;
+            }
+            if (BaseCalificacion == 0)
+            {
+                mensaje = "Favor Ingrese la base de la Nota";
+                return false;
+            }
+
+            return true;
+        }
     }
 }

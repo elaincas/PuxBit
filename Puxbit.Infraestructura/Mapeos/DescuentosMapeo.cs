@@ -16,7 +16,7 @@ namespace Puxbit.Infraestructura.Mapeos
             HasKey(x => x.ID);
             Property(x => x.ID).HasColumnName("ID").HasColumnType("int").IsRequired();
             Property(x => x.Descripcion).HasColumnName("Descripcion").HasColumnType("string").IsRequired();
-            Property(x => x.DescuentoPorcentual).HasColumnName("DescuentoPorcentual").HasColumnType("string").IsRequired();
+            Property(x => x.DescuentoPorcentual).HasColumnName("DescuentoPorcentual").HasColumnType("double").IsRequired();
         }
     }
 }

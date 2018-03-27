@@ -17,6 +17,40 @@ namespace Dominio.Entidades
         public int Fk_IdPerfil { get; set; }
 
         public virtual Perfiles Perfil { get; set; }
+        public Boolean esEntidadValida(out string mensaje)
+        {
+            mensaje = "OK";
 
+
+            if (string.IsNullOrEmpty(Usuario))
+            {
+                mensaje = "Favor Ingrese el Usuario  ";
+                return false;
+            }
+            if (string.IsNullOrEmpty(Password))
+            {
+                mensaje = "Favor Ingrese la Contraseña";
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(PistaPassword))
+            {
+                mensaje = "Favor Ingrese la Pista";
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(PrimerNombre))
+            {
+                mensaje = "Favor Ingrese el Segundo Nombre";
+                return false;
+            }
+
+            if (string.IsNullOrEmpty(SegundoNombre))
+            {
+                mensaje = "Favor Ingrese la Segundo Nombre";
+                return false;
+            }
+            return true;
+        }
     }
 }

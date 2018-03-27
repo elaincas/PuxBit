@@ -17,6 +17,26 @@ namespace Dominio.Entidades
 
         public virtual Institucion Institucion { get; set; }
         public virtual TipoEnvioMensajes  TipoEnvioMensaje { get; set; }
-
+        public Boolean esEntidadValida(out string mensaje)
+        {
+            mensaje = "OK";
+            if (string.IsNullOrEmpty(Titulo))
+            {
+                mensaje = "Favor Ingrese el Titulo";
+                return false;
+            }
+            if (string.IsNullOrEmpty(Contenido))
+            {
+                mensaje = "Favor Ingrese la Contenido";
+                return false;
+            }
+            if ( FechaCrea==null)
+            {
+                mensaje = "Favor Ingrese la Fecha";
+                return false;
+            }
+             
+            return true;
+        }
     }
 }

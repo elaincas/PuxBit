@@ -16,6 +16,24 @@ namespace Dominio.Entidades
         public string Descripcion { get; set; }
      
         public virtual List<ClaseDescripcion> ClasesDescripciones { get; set; }
+        public Boolean esEntidadValida(out string mensaje)
+        {
+            mensaje = "OK";
 
+            if (NumeroAula==0)
+            {
+                mensaje = "Favor Ingrese el numero de Aula";
+                return false;
+            }
+            if (string.IsNullOrEmpty(Ubicacion))
+            {
+                mensaje = "Favor Ingrese la Ubbicacion de la Aula";
+                return false;
+            }
+            
+
+            return true;
+        }
     }
+
 }

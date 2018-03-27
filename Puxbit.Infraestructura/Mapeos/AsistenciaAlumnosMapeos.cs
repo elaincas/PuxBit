@@ -14,14 +14,14 @@ namespace Puxbit.Infraestructura.Mapeos
         {
             HasKey(x => x.ID);
             Property(x => x.ID).HasColumnName("ID").HasColumnType("int").IsRequired();
-            Property(x => x.Dias).HasColumnName("Dias").HasColumnType("bit").IsRequired();
-            Property(x => x.Lunes).HasColumnName("Lunes").HasColumnType("bit").IsOptional();
-            Property(x => x.Martes).HasColumnName("Martes").HasColumnType("bit").IsOptional();
-            Property(x => x.Miercoles).HasColumnName("Miercoles").HasColumnType("bit").IsOptional();
-            Property(x => x.Jueves).HasColumnName("Jueves").HasColumnType("bit").IsOptional();
-            Property(x => x.Viernes).HasColumnName("Viernes").HasColumnType("bit").IsOptional();
-            Property(x => x.Sabado).HasColumnName("Sabado").HasColumnType("bit").IsOptional();
-            Property(x => x.Domingo).HasColumnName("Domingo").HasColumnType("bit").IsOptional();
+            Property(x => x.Dias).HasColumnName("Dias").HasColumnType("boolean").IsRequired();
+            Property(x => x.Lunes).HasColumnName("Lunes").HasColumnType("boolean").IsOptional();
+            Property(x => x.Martes).HasColumnName("Martes").HasColumnType("boolean").IsOptional();
+            Property(x => x.Miercoles).HasColumnName("Miercoles").HasColumnType("boolean").IsOptional();
+            Property(x => x.Jueves).HasColumnName("Jueves").HasColumnType("boolean").IsOptional();
+            Property(x => x.Viernes).HasColumnName("Viernes").HasColumnType("boolean").IsOptional();
+            Property(x => x.Sabado).HasColumnName("Sabado").HasColumnType("boolean").IsOptional();
+            Property(x => x.Domingo).HasColumnName("Domingo").HasColumnType("boolean").IsOptional();
 
             HasRequired(x => x.Alumno).WithMany(x => x.AsistenciasAlumnos).HasForeignKey(x => x.Fk_IdAlumno);
             HasRequired(x => x.Profesor).WithMany(x => x.AsistenciasAlumnos).HasForeignKey(x => x.Fk_IdProfesor);

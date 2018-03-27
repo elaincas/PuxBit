@@ -15,5 +15,17 @@ namespace Dominio.Entidades
         public virtual List<ClaseDescripcion> ClasesDescripciones{ get; set; }
 
         public virtual List<Profesores> Profesores { get; set; }
+        public Boolean esEntidadValida(out string mensaje)
+        {
+            mensaje = "OK";
+
+             
+            if (string.IsNullOrEmpty(NombreClase))
+            {
+                mensaje = "Favor Ingrese el nombre de clase";
+                return false;
+            }
+            return true;
+        }
     }
 }
