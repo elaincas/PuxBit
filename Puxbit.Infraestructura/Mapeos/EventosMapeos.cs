@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Puxbit.Infraestructura.Mapeos
 {
-    public class EnventosMapeos:EntidadBaseMapeo<Eventos>
+    public class EventosMapeos:EntidadBaseMapeo<Eventos>
     {
-        public EnventosMapeos():base("Eventos")
+        public EventosMapeos():base("Eventos")
         {
             HasKey(x => x.ID);
             Property(x => x.ID).HasColumnName("ID").HasColumnType("int").IsRequired();

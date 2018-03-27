@@ -48,25 +48,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Mapeos\AlumnosMapeos.cs" />
+    <Compile Include="Mapeos\AsistenciaAlumnosMapeos.cs" />
     <Compile Include="Mapeos\AulasMapeos.cs" />
+    <Compile Include="Mapeos\CalificacionesMapeos.cs" />
     <Compile Include="Mapeos\ClasesDescripcionMapeos.cs" />
     <Compile Include="Mapeos\ClasesMapeo.cs" />
     <Compile Include="Mapeos\DescuentosMapeo.cs" />
-    <Compile Include="Mapeos\EnventosMapeos.cs" />
+    <Compile Include="Mapeos\EventosMapeos.cs" />
+    <Compile Include="Mapeos\ExpulsionesMapeos.cs" />
     <Compile Include="Mapeos\GradosMapeos.cs" />
     <Compile Include="Mapeos\InstitucionesMapeos.cs" />
     <Compile Include="Mapeos\JornadasMapeos.cs" />
     <Compile Include="Mapeos\LogErroresMapeos.cs" />
     <Compile Include="Mapeos\MensajesMapeos.cs" />
     <Compile Include="Mapeos\PadresMapeos.cs" />
+    <Compile Include="Mapeos\PantallasMapeos.cs" />
+    <Compile Include="Mapeos\PerfilesMapeos.cs" />
+    <Compile Include="Mapeos\PerfilesPermisosMapeos.cs" />
+    <Compile Include="Mapeos\PermisosMapeo.cs" />
     <Compile Include="Mapeos\ProfesoresMapeos.cs" />
     <Compile Include="Mapeos\SeccionesMapeos.cs" />
     <Compile Include="Mapeos\TipoClasesMapeos.cs" />
+    <Compile Include="Mapeos\TipoEnvioMensajeMapeos.cs" />
+    <Compile Include="Mapeos\UsuariosMapeos.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PuxBitContexto.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="obj\Debug\CoreCompileInputs.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Puxbit.Infraestructura.csprojResolveAssemblyReference.cache" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -82,6 +97,14 @@
       <Project>{73DBBCBA-77A2-4FFC-B4BA-1C5A2D9F9003}</Project>
       <Name>PuxBit.Infraestructura.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\Puxbit.Infraestructura.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Puxbit.Infraestructura.dll" />
+    <Content Include="obj\Debug\Puxbit.Infraestructura.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

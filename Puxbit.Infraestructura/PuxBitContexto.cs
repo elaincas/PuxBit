@@ -15,30 +15,30 @@ namespace Puxbit.Infraestructura
         public PuxBitContexto() : base("cadena")
         { }
         public DbSet<Alumnos> Alumnos { get; set; }
-        public DbSet<AsistenciaAlumnos> AsistenciaAlumnos { get; set; } //PENDIENTE REVISAR
+        public DbSet<AsistenciaAlumnos> AsistenciaAlumnos { get; set; }  
         public DbSet<Aulas> Aulas { get; set; }
-        public DbSet<Calificaciones> Calificaiones { get; set; } //Pendiente
+        public DbSet<Calificaciones> Calificaiones { get; set; } 
         public DbSet<ClaseDescripcion> ClaseDescripcion { get; set; }
         public DbSet<Jornadas> Jornadas { get; set; }
         public DbSet<Clases> Clases { get; set; }
         public DbSet<Descuentos> Descuentos { get; set; }
-        public DbSet<Eventos> Eventos { get; set; } //Pendiente
+        public DbSet<Eventos> Eventos { get; set; }  
 
-        public DbSet<Expulsiones> Expulsiones { get; set; } //Pendiete
+        public DbSet<Expulsiones> Expulsiones { get; set; }  
 
         public DbSet<Grados> Grados { get; set; }
         public DbSet<LogErrores> LogErroes { get; set; }
         public DbSet<Institucion> Institucion { get; set; }
         public DbSet<Mensajes> Mensajes { get; set; }
         public DbSet<Padres> Padres { get; set; }
-        public DbSet<Pantalla> Pantallla { get; set; } //Pendiente
-        public DbSet<Perfiles> Perfiles { get; set; } //Pendiete
-        public DbSet<PerfilesPermisos> PerfilesPermiso { get; set; }//Pendiente
+        public DbSet<Pantalla> Pantallla { get; set; } 
+        public DbSet<Perfiles> Perfiles { get; set; }  
+        public DbSet<PerfilesPermisos> PerfilesPermiso { get; set; } 
         public DbSet<Permisos> Permisos { get; set; }
         public DbSet<Profesores> Profesores { get; set; }
         public DbSet<Secciones> Secciones { get; set; }
         public DbSet<TipoClase> TipoClase { get; set; }
-        public DbSet<TipoEnvioMensajes> TipoEnvioMensajes { get; set; } //Pendiente
+        public DbSet<TipoEnvioMensajes> TipoEnvioMensajes { get; set; }  
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -55,8 +55,16 @@ namespace Puxbit.Infraestructura
             modelBuilder.Configurations.Add(new PadresMapeos());
             modelBuilder.Configurations.Add(new ProfesoresMapeos());
             modelBuilder.Configurations.Add(new SeccionesMapeos());
+            modelBuilder.Configurations.Add(new AsistenciaAlumnosMapeos());
+            modelBuilder.Configurations.Add(new CalificacionesMapeos());
+            modelBuilder.Configurations.Add(new EventosMapeos());
+            modelBuilder.Configurations.Add(new ExpulsionesMapeos());
             modelBuilder.Configurations.Add(new TipoClasesMapeos());
-            ;
+            modelBuilder.Configurations.Add(new PantallasMapeos());
+            modelBuilder.Configurations.Add(new PerfilesMapeos());
+            modelBuilder.Configurations.Add(new PerfilesPermisosMapeos());
+            modelBuilder.Configurations.Add(new TipoEnvioMensajeMapeos());
+
 
 
         }
