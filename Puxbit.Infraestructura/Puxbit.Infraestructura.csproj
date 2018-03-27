@@ -63,6 +63,7 @@
     <Compile Include="Mapeos\SeccionesMapeos.cs" />
     <Compile Include="Mapeos\TipoClasesMapeos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PuxBitContexto.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
