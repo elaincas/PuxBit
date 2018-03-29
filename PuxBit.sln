@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Puxbit.Infraestructura", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuxBit.Infraestructura.Core", "PuxBit.Infraestructura.Core\PuxBit.Infraestructura.Core.csproj", "{73DBBCBA-77A2-4FFC-B4BA-1C5A2D9F9003}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PuxBit.Aplicacion", "PuxBit.Aplicacion\PuxBit.Aplicacion.csproj", "{58F8A2B2-64E6-4EB9-8B8E-B26CF904A511}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{73DBBCBA-77A2-4FFC-B4BA-1C5A2D9F9003}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73DBBCBA-77A2-4FFC-B4BA-1C5A2D9F9003}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73DBBCBA-77A2-4FFC-B4BA-1C5A2D9F9003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F8A2B2-64E6-4EB9-8B8E-B26CF904A511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F8A2B2-64E6-4EB9-8B8E-B26CF904A511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F8A2B2-64E6-4EB9-8B8E-B26CF904A511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F8A2B2-64E6-4EB9-8B8E-B26CF904A511}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,5 +60,6 @@ Global
 		{F1944042-6FF3-4B38-AAFE-B728D1BC9620} = {47D07C70-01AB-4795-9687-EF56F2C0C7C0}
 		{C5FAA6F3-B896-4893-A0AF-D0F42C4CAC3E} = {115B6B25-6063-4108-BDFE-DAA807119C73}
 		{73DBBCBA-77A2-4FFC-B4BA-1C5A2D9F9003} = {115B6B25-6063-4108-BDFE-DAA807119C73}
+		{58F8A2B2-64E6-4EB9-8B8E-B26CF904A511} = {747D66A6-8C43-4EC1-9CC1-A2221654136A}
 	EndGlobalSection
 EndGlobal
