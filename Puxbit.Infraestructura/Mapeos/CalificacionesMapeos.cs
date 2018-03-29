@@ -19,13 +19,13 @@ namespace Puxbit.Infraestructura.Mapeos
             Property(x => x.Nota_iip).HasColumnName("Nota_iip").HasColumnType("double").IsRequired();
             Property(x => x.Nota_iiip).HasColumnName("Nota_iiip").HasColumnType("double").IsRequired();
             Property(x => x.Nota_ivp).HasColumnName("Nota_ivp").HasColumnType("double").IsRequired();
-            Property(x => x.Estado_ip).HasColumnName("Estado_ip").HasColumnType("string").IsRequired();
-            Property(x => x.Estado_iip).HasColumnName("Estado_iip").HasColumnType("string").IsRequired();
-            Property(x => x.Estado_iiip).HasColumnName("Estado_iiip").HasColumnType("string").IsRequired();
-            Property(x => x.Estado_ivp).HasColumnName("Estado_ivp").HasColumnType("string").IsRequired();
-            Property(x => x.EstadoClase).HasColumnName("EstadoClase").HasColumnType("boolean").IsRequired();
+            Property(x => x.Estado_ip).HasColumnName("Estado_ip").HasColumnType("varchar").HasMaxLength(20).IsRequired();
+            Property(x => x.Estado_iip).HasColumnName("Estado_iip").HasColumnType("varchar").HasMaxLength(20).IsRequired();
+            Property(x => x.Estado_iiip).HasColumnName("Estado_iiip").HasColumnType("varchar").HasMaxLength(20).IsRequired();
+            Property(x => x.Estado_ivp).HasColumnName("Estado_ivp").HasColumnType("varchar").HasMaxLength(20).IsRequired();
+            Property(x => x.EstadoClase).HasColumnName("EstadoClase").HasColumnType("varchar").HasMaxLength(50).IsRequired();
             Property(x => x.BaseCalificacion).HasColumnName("baseCalificacion").HasColumnType("int").IsRequired();
-            Property(x => x.Observacion).HasColumnName("Observacion").HasColumnType("string").IsOptional();
+            Property(x => x.Observacion).HasColumnName("Observacion").HasColumnType("varchar").HasMaxLength(300).IsOptional();
 
             HasRequired(x => x.Clase).WithMany(x => x.Calificaciones).HasForeignKey(x => x.Fk_IdClase);
             HasRequired(x => x.Profesor).WithMany(x => x.Calificaciones).HasForeignKey(x => x.Fk_IdProfesor);

@@ -14,12 +14,12 @@ namespace Puxbit.Infraestructura.Mapeos
         {
             HasKey(x => x.ID);
             Property(x => x.ID).HasColumnName("ID").HasColumnType("int").IsRequired();
-            Property(x => x.Nombre).HasColumnName("Nombre").HasColumnType("string").IsRequired();
-            Property(x => x.Ubicacion).HasColumnName("Ubicacion").HasColumnType("string").IsRequired();
-            Property(x => x.Licencia).HasColumnName("Licencia").HasColumnType("string").IsRequired();
-            Property(x => x.Correo).HasColumnName("Correo").HasColumnType("string").IsRequired();
-            Property(x => x.Telefono).HasColumnName("Telefono").HasColumnType("string").IsRequired();
-            Property(x => x.Encargado).HasColumnName("Encargado").HasColumnType("string").IsRequired();
+            Property(x => x.Nombre).HasColumnName("Nombre").HasColumnType("varchar").HasMaxLength(150).IsRequired();
+            Property(x => x.Ubicacion).HasColumnName("Ubicacion").HasColumnType("varchar").HasMaxLength(300).IsRequired();
+            Property(x => x.Licencia).HasColumnName("Licencia").HasColumnType("varchar").HasMaxLength(100).IsRequired();
+            Property(x => x.Correo).HasColumnName("Correo").HasColumnType("varchar").HasMaxLength(150).IsRequired();
+            Property(x => x.Telefono).HasColumnName("Telefono").HasColumnType("varchar").HasMaxLength(15).IsRequired();
+            Property(x => x.Encargado).HasColumnName("Encargado").HasColumnType("varchar").HasMaxLength(150).IsRequired();
 
         }
         

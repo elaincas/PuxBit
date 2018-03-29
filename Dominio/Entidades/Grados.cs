@@ -10,7 +10,7 @@ namespace Dominio.Entidades
     public class Grados: EntidadBase
     {
         public string Descripcion { get; set; }
-        public double CostoMensual { get; set; }
+        public Decimal CostoMensual { get; set; }
         public Boolean esEntidadValida(out string mensaje)
         {
             mensaje = "OK";

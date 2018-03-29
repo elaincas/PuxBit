@@ -63,15 +63,6 @@ namespace PuxBit.Infraestructura.Core
                 return Tabla.AsQueryable();
             }
 
-        public List<TEntidad> Where(Expression<Func<TEntidad, bool>> filtro)
-        {
-            throw new NotImplementedException();
-        }
-
-        public TEntidad FirstOfDefault(Expression<Func<TEntidad, bool>> filtro)
-        {
-            throw new NotImplementedException();
-        }
     }
  
 }

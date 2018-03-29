@@ -10,7 +10,7 @@ namespace Dominio.Entidades
     public class Descuentos: EntidadBase
     {
         public string  Descripcion { get; set; }
-        public double DescuentoPorcentual { get; set; }
+        public Decimal DescuentoPorcentual { get; set; }
         public Boolean esEntidadValida(out string mensaje)
         {
             mensaje = "OK";
@@ -20,7 +20,7 @@ namespace Dominio.Entidades
                 mensaje = "Favor Ingrese la descripcion del Descuento";
                 return false;
             }
-            if ( DescuentoPorcentual==null)
+            if ( DescuentoPorcentual==0)
             {
                 mensaje = "Favor Ingrese el descuento en porcentaje";
                 return false;
