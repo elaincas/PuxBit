@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PuxBit.Aplicacion
 {
-    class GuardarProfesoresdto
+    public class GuardarProfesoresdto
     {
         public string PrimerNombre { get; set; }
         public string SegundoNombre { get; set; }

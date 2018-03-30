@@ -40,11 +40,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GuardarAsistenciaAlumnosdto.cs" />
+    <Compile Include="GuardarExpulsionesdto.cs" />
+    <Compile Include="GuardarAulasdto.cs" />
+    <Compile Include="GuardarCalificacionesdto.cs" />
+    <Compile Include="GuardarDescuentosdto.cs" />
+    <Compile Include="GuardarEventodto.cs" />
+    <Compile Include="GuardarInstitutodto.cs" />
+    <Compile Include="GuardarLogErroresdto,cs.cs" />
+    <Compile Include="GuardarMensajesdto.cs" />
+    <Compile Include="GuardarPerfilesdto.cs" />
+    <Compile Include="GuardarPermisodto.cs" />
+    <Compile Include="GuardarSeccionesdto.cs" />
+    <Compile Include="GuardarTipoEnvioMensajedto.cs" />
+    <Compile Include="GuardarTipoClasedto.cs" />
     <Compile Include="GuardarAlumnosdto.cs" />
     <Compile Include="GuardarClaseDescripciondto.cs" />
     <Compile Include="GuardarGradosdto.cs" />
+    <Compile Include="GuardarJornadasdto.cs" />
     <Compile Include="GuardarPadresdto.cs" />
     <Compile Include="GuardarProfesoresdto.cs" />
+    <Compile Include="GuardarUsuariosdto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

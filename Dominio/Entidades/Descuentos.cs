@@ -10,7 +10,7 @@ namespace Dominio.Entidades
     public class Descuentos: EntidadBase
     {
         public string  Descripcion { get; set; }
-        public Decimal DescuentoPorcentual { get; set; }
+        public float DescuentoPorcentual { get; set; }
         public Boolean esEntidadValida(out string mensaje)
         {
             mensaje = "OK";
