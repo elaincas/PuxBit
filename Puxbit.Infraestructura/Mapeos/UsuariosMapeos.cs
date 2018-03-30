@@ -14,11 +14,11 @@ namespace Puxbit.Infraestructura.Mapeos
         {
             HasKey(x => x.ID);
             Property(x => x.ID).HasColumnName("ID").HasColumnType("int").IsRequired();
-            Property(x => x.Usuario).HasColumnName("Usuario").HasColumnType("varchar").IsRequired();
-            Property(x => x.Password).HasColumnName("Password").HasColumnType("string").IsRequired();
-            Property(x => x.PistaPassword).HasColumnName("PistaPassword").HasColumnType("string").IsRequired();
-            Property(x => x.PrimerNombre).HasColumnName("PrimerNombre").HasColumnType("string").IsRequired();
-            Property(x => x.SegundoNombre).HasColumnName("SegundoNombre").HasColumnType("string").IsRequired();
+            Property(x => x.Usuario).HasColumnName("Usuario").HasColumnType("varchar").HasMaxLength(25).IsRequired();
+            Property(x => x.Password).HasColumnName("Password").HasColumnType("varchar").HasMaxLength(255).IsRequired();
+            Property(x => x.PistaPassword).HasColumnName("PistaPassword").HasColumnType("varchar").HasMaxLength(25).IsRequired();
+            Property(x => x.PrimerNombre).HasColumnName("PrimerNombre").HasColumnType("varchar").HasMaxLength(25).IsRequired();
+            Property(x => x.SegundoNombre).HasColumnName("SegundoNombre").HasColumnType("varchar").HasMaxLength(25).IsRequired();
 
             HasRequired(x => x.Perfil).WithMany(x => x.Usuarios).HasForeignKey(x => x.Fk_IdPerfil);
 

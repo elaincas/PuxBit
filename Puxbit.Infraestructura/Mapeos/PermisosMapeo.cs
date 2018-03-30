@@ -14,8 +14,8 @@ namespace Puxbit.Infraestructura.Mapeos
         {
             HasKey(x => x.ID);
             Property(x => x.ID).HasColumnName("ID").HasColumnType("int").IsRequired();
-            Property(x => x.NombrePermiso).HasColumnName("NombrePermiso").HasColumnType("string").IsRequired();
-            Property(x => x.Descripcion).HasColumnName("Descripcion").HasColumnType("string").IsRequired();
+            Property(x => x.NombrePermiso).HasColumnName("NombrePermiso").HasColumnType("varchar").HasMaxLength(255).IsRequired();
+            Property(x => x.Descripcion).HasColumnName("Descripcion").HasColumnType("varhcar").HasMaxLength(255).IsRequired();
 
 
 
