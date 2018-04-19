@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace PuxBit.Aplicacion
 {
-    class GuardarGradosdto
+    public class GuardarGradosdto
     {
         public string Descripcion { get; set; }
         public double Costo { get; set; }
+        public int ID { get; set; }
     }
 }

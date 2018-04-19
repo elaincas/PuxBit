@@ -30,8 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,31 +51,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GuardarAsistenciaAlumnosdto.cs" />
-    <Compile Include="GuardarExpulsionesdto.cs" />
-    <Compile Include="GuardarAulasdto.cs" />
-    <Compile Include="GuardarCalificacionesdto.cs" />
-    <Compile Include="GuardarDescuentosdto.cs" />
-    <Compile Include="GuardarEventodto.cs" />
-    <Compile Include="GuardarInstitutodto.cs" />
-    <Compile Include="GuardarLogErroresdto,cs.cs" />
-    <Compile Include="GuardarMensajesdto.cs" />
-    <Compile Include="GuardarPerfilesdto.cs" />
-    <Compile Include="GuardarPermisodto.cs" />
-    <Compile Include="GuardarSeccionesdto.cs" />
-    <Compile Include="GuardarTipoEnvioMensajedto.cs" />
-    <Compile Include="GuardarTipoClasedto.cs" />
-    <Compile Include="GuardarAlumnosdto.cs" />
-    <Compile Include="GuardarClaseDescripciondto.cs" />
-    <Compile Include="GuardarGradosdto.cs" />
-    <Compile Include="GuardarJornadasdto.cs" />
-    <Compile Include="GuardarPadresdto.cs" />
-    <Compile Include="GuardarProfesoresdto.cs" />
-    <Compile Include="GuardarUsuariosdto.cs" />
+    <Compile Include="DTOS\GuardarAsistenciaAlumnosdto.cs" />
+    <Compile Include="DTOS\GuardarExpulsionesdto.cs" />
+    <Compile Include="DTOS\GuardarAulasdto.cs" />
+    <Compile Include="DTOS\GuardarCalificacionesdto.cs" />
+    <Compile Include="DTOS\GuardarDescuentosdto.cs" />
+    <Compile Include="DTOS\GuardarEventodto.cs" />
+    <Compile Include="DTOS\GuardarInstitutodto.cs" />
+    <Compile Include="DTOS\GuardarLogErroresdto,cs.cs" />
+    <Compile Include="DTOS\GuardarMensajesdto.cs" />
+    <Compile Include="DTOS\GuardarPerfilesdto.cs" />
+    <Compile Include="DTOS\GuardarPerfilesPermisosdto.cs" />
+    <Compile Include="DTOS\GuardarPermisodto.cs" />
+    <Compile Include="DTOS\GuardarSeccionesdto.cs" />
+    <Compile Include="DTOS\GuardarTipoEnvioMensajedto.cs" />
+    <Compile Include="DTOS\GuardarTipoClasedto.cs" />
+    <Compile Include="DTOS\GuardarAlumnosdto.cs" />
+    <Compile Include="DTOS\GuardarClaseDescripciondto.cs" />
+    <Compile Include="DTOS\GuardarGradosdto.cs" />
+    <Compile Include="DTOS\GuardarJornadasdto.cs" />
+    <Compile Include="DTOS\GuardarPadresdto.cs" />
+    <Compile Include="DTOS\GuardarProfesoresdto.cs" />
+    <Compile Include="DTOS\GuardarUsuariosdto.cs" />
+    <Compile Include="DTOS\Respuesta.cs" />
+    <Compile Include="DTOS\RespuestaTipo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Servicios\GradosService\GradoService.cs" />
+    <Compile Include="Servicios\GradosService\IGradoService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GuardarClasedto.cs" />
+    <Compile Include="DTOS\GuardarClasedto.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{2F15DF00-5D00-43A1-B73B-B325BBE8E37E}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PuxBit.Infraestructura.Core\PuxBit.Infraestructura.Core.csproj">
+      <Project>{73DBBCBA-77A2-4FFC-B4BA-1C5A2D9F9003}</Project>
+      <Name>PuxBit.Infraestructura.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
